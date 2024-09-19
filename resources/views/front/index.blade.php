@@ -33,41 +33,7 @@
 </head>
 <body>
 <!--header section start -->
-<div class="header_section">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo"><a href="{{asset('fronte/index.html')}}"><img src="{{asset('fronte/images/logo.png')}}"></a></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">WEB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">ELEMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="{{asset('fronte/images/search-icon.png')}}"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+@include('front.header')
 <!--header section end -->
 <!--banner section start -->
 <div class="banner_section layout_padding">
@@ -83,7 +49,6 @@
 <!--banner section end -->
 <!--bg_main section start -->
 <div class="container">
-    <div class="bg_main"><img src="{{asset('fronte/images/bg-main.png')}}"></div>
 </div>
 <!--bg_main section end -->
 <!--about section start -->
@@ -100,65 +65,10 @@
 </div>
 <!--about section end -->
 <!--service section start -->
-<div class="service_section layout_padding">
-    <div class="container">
-        <h1 class="about_text">services</h1>
-        <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-        <div class="service_section_2">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                    <div class="icon_1"><img src="{{asset('fronte/images/icon-1.png')}}"></div>
-                    <h1 class="website_text">website element</h1>
-                    <p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="icon_1"><img src="{{asset('fronte/images/icon-2.png')}}"></div>
-                    <h1 class="website_text">applicatinos element</h1>
-                    <p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="icon_1"><img src="{{asset('fronte/images/icon-3.png')}}"></div>
-                    <h1 class="website_text">design element</h1>
-                    <p class="dolor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliq</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('front.nowbar')
 <!--service section end -->
 <!--contact section start -->
-<div class="contact_section layout_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="contact_text">Requeste a call back</h1>
-                <div class="contact_main">
-                    <div class="mail_section">
-                        <input type="Name" class="mail_text" placeholder="Name" name="Name">
-                        <input type="Name" class="mail_text" placeholder="Email" name="Email">
-                        <input type="Name" class="mail_text" placeholder="Phone" name="Phone">
-                        <select>
-                            <option value="volvo">Select elements</option>
-                            <option value="saab">One</option>
-                            <option value="opel">Two</option>
-                            <option value="audi">Three</option>
-                        </select>
-                        <textarea class="massage_text" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-                        <div class="send_bt">
-                            <div class="send_text"><a href="#">SEND</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="contact_bg"><img src="{{asset('fronte/images/contact-bg.png')}}"></div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('front.content')
 <!--contact section end -->
 <!--client section start -->
 <div class="client_section layout_padding">
@@ -174,36 +84,14 @@
 </div>
 <!--client section end -->
 <!--footer section start -->
-<div class="footer_section layout_padding">
-    <div class="container">
-        <div class="footer_main">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon2">subscribe Now</span>
-                </div>
-            </div>
-            <h1 class="year_text">2020</h1>
-            <h1 class="landing_text">Free Multipurpose Responsive  Landing Page </h1>
-        </div>
-        <div class="social_icon">
-            <ul>
-                <li><a href="#"><img src="{{asset('fronte/images/fb-icon.png')}}"></a></li>
-                <li><a href="#"><img src="{{asset('fronte/images/twitter-icon.png')}}"></a></li>
-                <li><a href="#"><img src="{{asset('fronte/images/linkdin-icon.png')}}"></a></li>
-                <li><a href="#"><img src="{{asset('fronte/images/instagram-icon.png')}}"></a></li>
-                <li><a href="#"><img src="{{asset('fronte/images/youtub-icon.png')}}"></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+@include('front.footer')
 <!--footer section end -->
 <!--copyright section start -->
 <div class="copyright_section">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p class="copyright_text">2024 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+                <p class="copyright_text">2024 All Rights Reserved Design by <a href="https://html.design/"></a> Free Html Templates</p>
             </div>
         </div>
     </div>
@@ -222,11 +110,7 @@
 <script src="{{asset('fronte/js/owl.carousel.js')}}"></script>
 <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".fancybox").fancybox({
-            openEffect: "none",
-            closeEffect: "none"
-        });
+
 </script>
 </body>
 </html>
